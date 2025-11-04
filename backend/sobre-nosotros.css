@@ -1,0 +1,130 @@
+/* Estilo para párrafos */
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin-bottom: 15px;
+    text-align: justify; /* Justificación del texto */
+    color: #333; /* Mejora el contraste del texto */
+}
+.navbar .nav-link:hover {
+    color: #D2691E;
+    font-weight: bold;
+}
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f5f0; /* Fondo cálido */
+    color: #333; /* Texto oscuro para buen contraste */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5a3e2b; /* Marrón oscuro artesanal */
+}
+
+
+
+/* Títulos */
+.h12 {
+    color: #5a3e2b; /* Marrón oscuro */
+    font-family: 'Georgia', serif; /* Tipografía elegante */
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.8; /* Mejora la legibilidad */
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Pirámide */
+.piramide {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #5a3e2b; /* Marrón oscuro */
+    font-style: italic;
+    margin: 30px 0;
+}
+
+/* Contenedores */
+.container {
+    background-color: #fff; /* Fondo blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Filas y columnas */
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    padding: 10px;
+}
+
+/* Botones */
+button, .btn {
+    background-color: #d4a373; /* Marrón claro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #5a3e2b; /* Marrón oscuro */
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #333; /* Texto oscuro */
+
+}
+
+/* Estilo para el acordeón */
+.accordion-button {
+    background-color: #f9f5f0; /* Fondo claro por defecto */
+    color: #333; /* Texto oscuro */
+    font-weight: bold; /* Texto en negrita */   
+}
+
+.accordion-button:hover {
+    background-color: #d4a373; /* Marrón claro */
+    color: #fff; /* Texto blanco para contraste */
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d4a373; /* Marrón claro cuando está expandido */
+    color: #fff; /* Texto blanco */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.5); /* Sombra suave */
+}
+
+.accordion-button::after {
+    content: '\002B'; /* Símbolo "+" */
+    font-size: 1.25rem;
+    color: #333; /* Color oscuro */
+    transform: rotate(0deg); /* Sin rotación */
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '\2212'; /* Símbolo "-" */
+    transform: rotate(0deg); /* Sin rotación */
+}
