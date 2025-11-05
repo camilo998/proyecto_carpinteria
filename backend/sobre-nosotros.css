@@ -10,7 +10,16 @@ p {
     color: #D2691E;
     font-weight: bold;
 }
+header {
+    background-color: rgba(228, 182, 108, 0.954);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el header quede por encima de otros elementos */
 
+}
 /* General */
 body {
     font-family: 'Arial', sans-serif;
