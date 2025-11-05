@@ -5,6 +5,13 @@
 
 header {
     background-color: rgba(228, 182, 108, 0.954);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el header quede por encima de otros elementos */
+
 }
 
 .navbar .nav-link:hover {
@@ -69,7 +76,6 @@ header {
     background-attachment: fixed; /* Mantiene el fondo fijo al desplazarse */
 }
 
-
 /* Estilo de listas y enlaces */
 li {
     display: inline-block;
@@ -90,5 +96,5 @@ a {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1px;
 }

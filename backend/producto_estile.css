@@ -87,6 +87,14 @@
 /* Estilos para el encabezado */
 header {
     margin-bottom: 20px;
+
+    background-color: rgba(228, 182, 108, 0.954);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el header quede por encima de otros elementos */
 }
 
 /* Estilos para el formulario de compra */
