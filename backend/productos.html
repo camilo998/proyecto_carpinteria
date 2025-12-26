@@ -43,9 +43,187 @@
             🌿 Desde <strong>mesas artesanales</strong> que combinan durabilidad y elegancia, hasta <strong>clósets</strong> y <strong>escritorios</strong> pensados para reflejar tu buen gusto. ¡Déjate inspirar y encuentra lo que estás buscando!
         </p>
     </div>
+<div>
+    <br>
+    <div id="productos-container" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Productos se cargarán dinámicamente aquí -->
 
-    
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/Comedor-Rustico.jpg" class="card-img-top" alt="Mesa artesanal de roble">
+                <div class="card-body">
+                    <h5 class="card-title">Mesa</h5>
+                    <p class="card-text">Mesa artesanal, perfecta para comedores elegantes.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400 mil</button>
+                </div>
+            </div>
+        </div>
 
-    
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/mesa2.jpg" class="card-img-top" alt="Mesa resistente con acabados finos">
+                <div class="card-body">
+                    <h5 class="card-title">Mesa</h5>
+                    <p class="card-text">Mesa resistente con acabados finos, ideal para cualquier hogar.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/mesa3.png" class="card-img-top" alt="Mesa elegante y funcional">
+                <div class="card-body">
+                    <h5 class="card-title">Mesa</h5>
+                    <p class="card-text">Mesa elegante y funcional, ideal para añadir calidez y estilo a cualquier espacio.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/mueble.jpg" class="card-img-top" alt="Closet elegante y versátil">
+                <div class="card-body">
+                    <h5 class="card-title">Clóset</h5>
+                    <p class="card-text">Armario elegante y versátil, diseñado para aportar estilo y sofisticación a tus espacios.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/mueble2.jpg" class="card-img-top" alt="Closet con acabados finos">
+                <div class="card-body">
+                    <h5 class="card-title">Clóset</h5>
+                    <p class="card-text">Armario elegante y versátil, diseñado para aportar estilo y sofisticación a tus espacios.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/espejo.jpg" class="card-img-top" alt="Closet elegante y funcional">
+                <div class="card-body">
+                    <h5 class="card-title">Clóset</h5>
+                    <p class="card-text">Clóset elegante y funcional con amplio espacio de almacenamiento.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$400mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/escritorio.webp" class="card-img-top" alt="Escritorio moderno para computador">
+                <div class="card-body">
+                    <h5 class="card-title">Escritorio</h5>
+                    <p class="card-text">Escritorio moderno y funcional, ideal para oficinas y estudios.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$300 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/escritoriodos..avif" class="card-img-top" alt="Escritorio compacto para computador">
+                <div class="card-body">
+                    <h5 class="card-title">Escritorio</h5>
+                    <p class="card-text">Escritorio compacto con diseño minimalista, perfecto para espacios pequeños.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$250 mil</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="img/escritorio3..jpg" class="card-img-top" alt="Escritorio elegante para computador">
+                <div class="card-body">
+                    <h5 class="card-title">Escritorio</h5>
+                    <p class="card-text">Escritorio elegante con amplio espacio de trabajo, ideal para profesionales.</p>
+                    <button class="btn-comprar" onclick="mostrarFormulario()">$350 mil</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal overlay y formulario de compra -->
+<div id="modal-overlay" aria-hidden="true"></div>
+
+<div id="formulario-compra" aria-hidden="true" role="dialog" aria-modal="true">
+    <button type="button" class="btn-close" aria-label="Cerrar" onclick="cerrarFormulario()"></button>
+    <h2>Formulario de Compra</h2>
+    <form id="compra-form">
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Número de Teléfono:</label>
+            <input type="text" class="form-control" id="telefono" required>
+        </div>
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" required>
+        </div>
+        <div class="mb-3">
+            <label for="nota" class="form-label">Nota o Información Adicional:</label>
+            <textarea class="form-control" id="nota"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="fecha-entrega" class="form-label">¿Cuándo desea recibir el pedido?</label>
+            <input type="date" class="form-control" id="fecha-entrega" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="metodo-pago" class="form-label">Método de Pago:</label>
+            <select class="form-control" id="metodo-pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<script>
+    function mostrarFormulario(){
+        document.getElementById('modal-overlay').classList.add('show');
+        document.getElementById('formulario-compra').classList.add('show');
+        document.getElementById('formulario-compra').setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarFormulario(){
+        document.getElementById('modal-overlay').classList.remove('show');
+        document.getElementById('formulario-compra').classList.remove('show');
+        document.getElementById('formulario-compra').setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    // Cerrar al hacer clic fuera, al enviar o con la tecla Esc
+    document.addEventListener('DOMContentLoaded', function(){
+        var overlay = document.getElementById('modal-overlay');
+        var form = document.getElementById('compra-form');
+        overlay.addEventListener('click', cerrarFormulario);
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            // Aquí puedes manejar el envío por AJAX o redirigir
+            alert('Gracias, tu pedido fue enviado (simulación).');
+            cerrarFormulario();
+        });
+
+        document.addEventListener('keydown', function(e){
+            if(e.key === 'Escape'){
+                var isOpen = document.getElementById('formulario-compra').classList.contains('show');
+                if(isOpen) cerrarFormulario();
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

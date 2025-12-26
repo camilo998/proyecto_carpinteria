@@ -97,6 +97,18 @@ header {
     z-index: 9999; /* Asegura que el header quede por encima de otros elementos */
 }
 
+/* Evita que el contenido quede debajo del header fijo */
+body {
+    padding-top: 80px; /* Ajusta según la altura del header */
+}
+
+/* Ajuste para pantallas muy pequeñas donde el header puede ocupar más espacio */
+@media (max-width: 576px) {
+    body {
+        padding-top: 110px;
+    }
+}
+
 /* Estilos para el formulario de compra */
 #formulario-compra {
     border: 1px solid #D2B48C; /* Marrón claro */
@@ -110,4 +122,56 @@ header {
 #formulario-compra h2 {
     color: #8B4513; /* Marrón cálido */
     margin-bottom: 15px;
+}
+
+/* Modal overlay y formulario centrado */
+#modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10000; /* Por encima del header */
+}
+#modal-overlay.show {
+    display: block;
+}
+
+#formulario-compra {
+    border: 1px solid #D2B48C; /* Marrón claro */
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #FFF8DC; /* Blanco antiguo */
+    width: min(600px, 90vw);
+    max-width: 600px;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001; /* Por encima del overlay */
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: calc(100vh - 120px); /* Evita cubrir la barra del navegador/barra de tareas */
+    overflow-y: auto; /* Permite scroll interno si es necesario */
+    -webkit-overflow-scrolling: touch; /* Mejor desplazamiento en móviles */
+}
+#formulario-compra.show {
+    display: block;
+}
+
+#formulario-compra .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 576px) {
+    #formulario-compra {
+        width: calc(100% - 40px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: none;
+        max-height: calc(100vh - 140px); /* Más margen en móviles */
+    }
 }

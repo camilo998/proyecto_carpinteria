@@ -26,6 +26,13 @@ body {
     background-color: #f9f5f0; /* Fondo cálido */
     color: #333; /* Texto oscuro para buen contraste */
     line-height: 1.6; /* Mejora la legibilidad */
+    padding-top: 80px; /* Evita que el header fijo tape los contenidos */
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 110px; /* Ajuste para headers más altos en móviles */
+    }
 }
 
 /* Navbar */
